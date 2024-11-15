@@ -1,0 +1,31 @@
+/* Breakpoint para tablets e desktop */
+
+@media screen and (min-width: 769px) {
+
+  nav {
+    padding: 1.6rem 10rem;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav hr {
+    width: 1px;
+    height: 4.4rem;
+  }
+
+  #contUs {
+    width: 12.8rem;
+  }
+
+  .toggleDarkMode {
+    width: 4rem;
+  }
+
+  .toggleDarkMode p {
+    display: none;
+  }
+}
