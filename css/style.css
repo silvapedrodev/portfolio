@@ -20,6 +20,8 @@
 
   --outlineWithe: #fafafa;
   --svg-whiteMode-hover: #fbbf24;
+  --nav-shadow: rgba(122, 122, 122, 0.100);
+  --available-circle: #84cc16;
 }
 
 /* Definições de estilo para o modo claro (white-mode) */
@@ -76,6 +78,7 @@ body {
   fill: var(--svg-whiteMode-hover);
   filter: drop-shadow(0 0 10px var(--svg-whiteMode-hover));
 
+  cursor: pointer;
   transition: all 300ms ease-in;
 }
 
@@ -88,8 +91,16 @@ body {
 }
 
 /* Estilos da lista de navegação */
-.logo img {
-  width: 2.4rem;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+
+  height: 8vh;
+  box-shadow: 0 0 15px var(--nav-shadow);
+
+  padding: 1.6rem;
 }
 
 a {
@@ -98,25 +109,17 @@ a {
   transition: 0.3s;
 }
 
+.logo img {
+  width: 2.4rem;
+}
+
 a:hover {
   color: var(--gradient-color01);
 }
 
 ul li:hover:not(:last-child) {
-  transform: scale(1.1);
+  transform: scale(1.03);  
   transition: transform 200ms linear;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-
-  height: 8vh;
-  box-shadow: 0 0 15px rgba(122, 122, 122, 0.100);
-
-  padding: 1.6rem;
 }
 
 .nav-list {
@@ -197,7 +200,7 @@ nav hr {
 }
 
 /* Estilos específicos para mobile */
-@media (max-width: 769px){
+@media (max-width: 840px){
   body {
     overflow-x: hidden;
   }
@@ -241,4 +244,94 @@ nav hr {
 
 .btnClose.active{
   display: block;
+}
+
+/* Conteúdo principal */
+main {
+  display: grid;
+  place-content: center;
+}
+
+/* page inicial */
+section {
+  padding: 6.4rem 1.6rem;
+}
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 4.8rem;
+}
+
+.imagePerfil {
+  margin: 0 auto;
+}
+
+.imagePerfil img{
+  width: 24rem;
+  border-radius: 50%;
+}
+
+.description h1 {
+  margin-bottom: 0.8rem;
+}
+
+/* Estilização local e disponibilidade */
+.status {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 0.8rem;
+
+  background-color: none;
+}
+
+#local {
+  display: flex;
+  gap: 0.8rem;
+}
+
+#local svg{
+  width: 2.4rem;
+}
+
+.status div:last-child{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.status hr {
+  background-color: var(--available-circle);
+  width: 1rem;
+  height: 1rem;
+
+  margin-left: 0.8rem;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Estilização dos ícones de social mídia */
+section .socialMedia {
+  justify-content: flex-start;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.socialMedia svg {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  fill: var(--second-color);
+}
+
+.socialMedia svg:hover {
+  fill: var(--gradient-color01);
+  transform: scale(1.1);
+
+  transition: 300ms;
 }

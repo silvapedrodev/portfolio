@@ -1,6 +1,6 @@
 /* Breakpoint para tablets e desktop */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 840px) {
 
   nav {
     padding: 1.6rem 10rem;
@@ -28,4 +28,11 @@
   .toggleDarkMode p {
     display: none;
   }
+
+  /* conteúdo principal */
+  section {
+    padding: 9.6rem 10rem;
+    width: 100vw;
+  }
+
 }
