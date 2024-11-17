@@ -24,7 +24,7 @@
   --available-circle: #84cc16;
 }
 
-/* Definições de estilo para o modo claro (white-mode) */
+/* ----- Definições de estilo para o modo claro (white-mode) ---- */
 .white-mode:root {
   --font-color: #1D1D1D;
 
@@ -43,7 +43,7 @@ body {
   transition: background 200ms linear;
 }
 
-/* Botões de controle de tema (escuro/claro) */
+/* --- Botões de controle de tema (escuro/claro) --- */
 .toggleDarkMode {
   width: 100%;
   display: flex;
@@ -59,7 +59,7 @@ body {
   border: none;
 }
 
-/* Ícone de Lua (DarkMode)*/
+/* Ícone de Lua (DarkMode) */
 #dark svg {
   fill: var(--second-color);
 }
@@ -90,7 +90,7 @@ body {
   display: flex;
 }
 
-/* Estilos da lista de navegação */
+/* ------ Estilos da lista de navegação -----*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -179,7 +179,7 @@ nav hr {
   left: 0;
 }
 
-/* Estilização do menu Mobile */
+/* ----- Estilização do menu Mobile ---------*/
 .mobile-menu {
   display: none;
   cursor: pointer;
@@ -246,13 +246,13 @@ nav hr {
   display: block;
 }
 
-/* Conteúdo principal */
+/* ------- Conteúdo Principal --------- */
 main {
   display: grid;
   place-content: center;
 }
 
-/* page inicial */
+/* --------- Home Page ----------*/
 section {
   padding: 6.4rem 1.6rem;
 }
@@ -277,7 +277,7 @@ section {
   margin-bottom: 0.8rem;
 }
 
-/* Estilização local e disponibilidade */
+/* -- Estilização local e disponibilidade -- */
 .status {
   display: flex;
   flex-direction: column;
@@ -312,7 +312,7 @@ section {
   border-radius: 50%;
 }
 
-/* Estilização dos ícones de social mídia */
+/* --- Estilização dos ícones de social mídia --- */
 section .socialMedia {
   justify-content: flex-start;
 }

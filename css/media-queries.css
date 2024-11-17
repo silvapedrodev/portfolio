@@ -1,4 +1,4 @@
-/* Breakpoint para tablets e desktop */
+/* --- Breakpoint para tablets e desktop ----- */
 
 @media screen and (min-width: 840px) {
 
@@ -29,10 +29,42 @@
     display: none;
   }
 
-  /* conteúdo principal */
+  /* ------ conteúdo principal ---------- */
   section {
     padding: 9.6rem 10rem;
     width: 100vw;
   }
 
+  /* ----------- Home Page display ------------- */
+  #home {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto auto; 
+    gap: 4.8rem; 
+    align-items: start; 
+  }
+  
+  .imagePerfil {
+    grid-column: 2; 
+    grid-row: 1 / span 3; /* A imagem ocupa todas as 3 linhas */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .description {
+    grid-column: 1; 
+    grid-row: 1; 
+  }
+  
+  .status {
+    grid-column: 1; 
+    grid-row: 2; 
+  }
+  
+  .socialMedia {
+    grid-column: 1; 
+    grid-row: 3; 
+  }
+  
 }
