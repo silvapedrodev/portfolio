@@ -90,6 +90,7 @@ body {
   display: flex;
 }
 
+
 /* ------ Estilos da lista de navegação -----*/
 nav {
   display: flex;
@@ -103,10 +104,28 @@ nav {
   padding: 1.6rem;
 }
 
-a {
+nav li a {
   color: var(--font-color);
   text-decoration: none;
   transition: 0.3s;
+  position: relative;
+}
+
+/* ---- Effect Link Hover ----  */
+nav ul li:not(:last-child) a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gradient-color01) 0%, var(--gradient-color02) 100%);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
 }
 
 .logo img {
@@ -147,22 +166,6 @@ nav hr {
   transition: color 0.4s ease; 
 }
 
-#contUs a {
-  color: var(--contactColor);
-}
-
-#contUs:focus-within  {
-  border: 2px solid var(--outlineWithe);
-}
-
-#contUs a:focus{
-  outline: none;
-}
-
-#contUs:active {
-  transform: scale(0.98); /* Efeito de pressionamento */
-}
-
 #contUs::after {
   content: "";
   position: absolute;
@@ -179,21 +182,40 @@ nav hr {
   left: 0;
 }
 
+#contUs:focus-within  {
+  border: 2px solid var(--outlineWithe);
+}
+
+#contUs a {
+  color: var(--contactColor);
+}
+
+#contUs a:focus{
+  outline: none;
+}
+
+#contUs:active {
+  transform: scale(0.98); /* Efeito de pressionamento */
+}
+
 /* ----- Estilização do menu Mobile ---------*/
 .mobile-menu {
   display: none;
   cursor: pointer;
 }
 
-.btnOpen  {
+.btnOpen, .btnClose {
   width: 2.4rem;
   fill: var(--second-color);
+  transition: fill 300ms ease;
+}
+
+.btnOpen:hover, .btnClose:hover{
+  fill: var(--gradient-color01);
 }
 
 .btnClose{
   display: none;
-  width: 2.4rem;
-  fill: var(--second-color);
   transition: 0.3s;
 
   transform: scale(2);
@@ -209,13 +231,22 @@ nav hr {
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 70vw;
+    width: 100vw;
     height: 92vh;
-    background-color: var(--primary-color);
     align-items: center;
     transform: translateX(100%);
-    z-index: 5;
-    transition: transform 300ms ease-in;
+    z-index: 2;
+    
+    transition: transform 300ms ease-in,  backdrop-filter 0.7s ease-in-out;
+  }
+
+  .modal-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 70vw;
+    height: 100%;
   }
 
   .nav-list {
@@ -225,17 +256,15 @@ nav hr {
     padding: 1.6rem;
   }
 
-  /* .nav-list li{
-    opacity: 0;
-  } */
-
   .mobile-menu{
     display: block;
   }
+
 }
 
 .nav-menu.active {
   transform: translateX(0);
+  backdrop-filter: blur(4px);
 }
 
 .btnOpen.active {
@@ -274,7 +303,20 @@ section {
 }
 
 .description h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
+  line-height: 4rem; 
+
   margin-bottom: 0.8rem;
+}
+
+.description h1 span {
+  color: var(--gradient-color01);
+}
+
+.description p {
+  font-weight: 400;
+  line-height: 2.4rem;
 }
 
 /* -- Estilização local e disponibilidade -- */
@@ -313,10 +355,6 @@ section {
 }
 
 /* --- Estilização dos ícones de social mídia --- */
-section .socialMedia {
-  justify-content: flex-start;
-}
-
 .socialMedia {
   display: flex;
   gap: 0.8rem;

@@ -32,13 +32,12 @@
   /* ------ conteúdo principal ---------- */
   section {
     padding: 9.6rem 10rem;
-    width: 100vw;
   }
 
   /* ----------- Home Page display ------------- */
   #home {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: auto auto auto; 
     gap: 4.8rem; 
     align-items: start; 
@@ -50,6 +49,10 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
+  }
+
+  .imagePerfil img {
+    width: 70%;
   }
   
   .description {
@@ -65,6 +68,11 @@
   .socialMedia {
     grid-column: 1; 
     grid-row: 3; 
+  }
+
+  /* ----- Home Page Conteúdo ---- */
+  .description h1 {
+    font-size: 4.8rem;
   }
   
 }
