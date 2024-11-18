@@ -17,6 +17,8 @@
 
   --primary-color: #1D1D1D; /* Cor principal (fundo escuro) */
   --second-color: #f8fafc; /* Cor secundaria (texto claro) */
+  --third-color: #292929;
+  --fourth-color: #EFF2F4;
 
   --outlineWithe: #fafafa;
   --svg-whiteMode-hover: #fbbf24;
@@ -30,6 +32,8 @@
 
   --primary-color: #f8fafc;
   --second-color: #1D1D1D;
+  --third-color: #EFF2F4;
+  --fourth-color: #292929;
 
   --outlineWithe: #1D1D1D;
 }
@@ -372,4 +376,89 @@ section {
   transform: scale(1.1);
 
   transition: 300ms;
+}
+
+
+/* ------ About me Page ------  */
+#about-me {
+  background-color: var(--third-color);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2.4rem;
+}
+
+.sub-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(90deg, var(--gradient-color01) 0%, var(--gradient-color02) 100%);
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-style: normal;
+  color: var(--contactColor);
+  
+  border-radius: 1.2rem;
+  padding: 8px 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-col-1 img{
+  max-width: 30rem; 
+  height: auto; 
+  border-radius: 1.6rem; 
+  overflow: auto;
+}
+
+.about-col-2 {
+  display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+}
+
+.about-col-2 p {
+  margin-bottom: 1.6rem;
+}
+
+#experience h2{
+  font-size: 3.6rem;
+  color: var(--gradient-color01);
+  margin-bottom: 0.8rem;
+}
+
+.company {
+  display: flex;
+  gap: 10rem;
+  align-items: flex-start;
+  justify-content: space-between;
+ 
+  width: 100%;
+}
+
+.company h3 {
+  font-size: 1.8rem;
+}
+
+.company p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  opacity: 0.4;
+}
+
+/* -------  Formação Page ------  */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
