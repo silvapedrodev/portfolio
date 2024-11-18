@@ -44,6 +44,8 @@ body {
   color: var(--font-color);
   font-family: var(--font-default);
 
+  position: relative;
+
   transition: background 200ms linear;
 }
 
@@ -101,7 +103,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
-
+  
   height: 8vh;
   box-shadow: 0 0 15px var(--nav-shadow);
 
@@ -140,7 +142,7 @@ a:hover {
   color: var(--gradient-color01);
 }
 
-ul li:hover:not(:last-child) {
+nav ul li:hover:not(:last-child) {
   transform: scale(1.03);  
   transition: transform 200ms linear;
 }
@@ -240,6 +242,7 @@ nav hr {
     align-items: center;
     transform: translateX(100%);
     z-index: 2;
+    overflow-x: hidden;
     
     transition: transform 300ms ease-in,  backdrop-filter 0.7s ease-in-out;
   }
@@ -269,6 +272,16 @@ nav hr {
 .nav-menu.active {
   transform: translateX(0);
   backdrop-filter: blur(4px);
+}
+
+/* bloqueia a rolagem quando o menu está aberto */
+body.no-scroll, html.no-scroll {
+  overflow: hidden; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .btnOpen.active {
@@ -458,7 +471,39 @@ section {
 }
 
 /* -------  Formação Page ------  */
-.wrapper {
+#experiencia {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+#experiencia svg {
+  width: 50px;
+  fill: var(--gradient-color01);
+}
+
+#experiencia li {
+  line-height: 2.4rem;
+}
+
+.exp-1, .exp-2, .exp-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  background-color: var(--third-color);
+  border-radius: 1.2rem;
+  padding: 3.2rem;
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+#experiencia p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#experiencia h2 {
+  margin-bottom: 1.6rem;
 }

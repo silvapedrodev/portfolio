@@ -10,5 +10,6 @@ export function navBar() {
     nav.classList.toggle("active")
     btnOpen.classList.toggle("active")
     btnClose.classList.toggle("active")
+    document.body.classList.toggle('no-scroll')
   })
 }
