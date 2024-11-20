@@ -16,5 +16,4 @@ export function addWhiteMode() {
 
   btnDark.addEventListener("click", whiteMode)
   btnWhite.addEventListener("click", whiteMode)
-  
 }

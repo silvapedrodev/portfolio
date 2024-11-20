@@ -126,6 +126,21 @@
     justify-content: space-between;
   }
 
+  /* --------- Skills -----------  */
+  #skills ul{
+    max-width: 100rem;
+    margin: auto;
+  }
+
+  #skills li {
+    flex-basis: 15%;
+  }
+
+  .skill ul {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
 
 
