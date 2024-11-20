@@ -31,7 +31,7 @@
             <li><a href="#about-me">Sobre mim</a></li>
             <li><a href="#education">Formação</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <hr>
              <!-- Seção para o controle de tema (Dark Mode / Light Mode) -->
             <div class="toggleDarkMode">
@@ -109,8 +109,8 @@
         </a>
       </div>
     </section>
-    <!-- ----- Sobre mim --------  -->
-     <section id="about-me">
+    
+    <section id="about-me">
       <div class="container">
         <div class="row">
           <h1 class="sub-title">Sobre mim</h1>
@@ -149,9 +149,9 @@
           </div>
         </div>
       </div>
-     </section>
-     <!-- ------- formação -------  -->
-      <section id="education">
+    </section>
+
+    <section id="education">
         <div class="container">
          <div class="row">
           <h1 class="sub-title">Formação</h1>
@@ -246,13 +246,15 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="skills">
+    </section>
+ 
+    <section id="skills">
         <div class="container">
           <div class="row">
             <h1 class="sub-title">Skills</h1>
+            <h2>Ferramentas e tecnologias que estou aprendendo a usar</h2>
           </div>
+          <!-- --- ícone das habilidades ---  -->
           <div class="skill">
             <ul>
               <li>
@@ -382,7 +384,93 @@
             </ul>
           </div>
         </div>
-      </section>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="sub-title">Meus Projetos</h1>
+          <h2>Alguns dos projetos que desenvolvi até o momento</h2>
+        </div>
+        <div class="work-list">
+          <div class="work">
+            <div class="header-work">
+              <img src="./assets/img/image-1.png" alt="Captura de tela do site MovieSearch exibindo sua interface e funcionalidade de busca por filmes.">
+            </div>
+            <div class="content-work">
+              <h2>MovieSearch</h2>
+              <p>
+                Um site que utiliza a API OMDb para recuperar informações de filmes por título ou ID do IMDb.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>OMDb API</li>
+                <li>Local Storage</li>
+              </ul>
+            <a href="https://silvapedrodev.github.io/MovieSearch/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+              </svg>
+            </a>
+            </div>
+            <ul>
+          </div>
+          <div class="work">
+            <div class="header-work">
+              <img src="./assets/img/image-2.png" alt="Captura de tela do TimerEdge mostrando a interface com o cronômetro, opções de personalização de cores e modo escuro.">
+            </div>
+            <div class="content-work">
+              <h2>timerEdge</h2>
+              <p>
+                TimerEdge é um projeto de cronômetro construído com HTML, CSS e JavaScript. Ele apresenta um cronômetro personalizável, indicadores visuais de progresso, notificações sonoras e opções para personalização de cores e modo escuro.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Color Selector</li>
+                <li>Sound Alerts</li>
+                <li>Dark Mode</li>
+              </ul>
+            <a href="https://silvapedrodev.github.io/timerEdge/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+              </svg>
+            </a>
+            </div>
+            <ul>
+          </div>
+          <div class="work">
+            <div class="header-work">
+              <img src="./assets/img/image-3.png" alt="Captura de tela da calculadora de IMC exibindo campos para altura, peso e o resultado com a classificação correspondente.">
+            </div>
+            <div class="content-work">
+              <h2>IMC-Calculator</h2>
+              <p>
+                Calculadora de IMC construída com HTML, CSS e JavaScript. Calcula o Índice de Massa Corporal com base na altura e no peso, fornecendo a faixa de classificação correspondente ao resultado.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Interactive Modal</li>
+              </ul>
+            <a href="https://silvapedrodev.github.io/IMC-Calculator/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+              </svg>
+            </a>
+            </div>
+            <ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 

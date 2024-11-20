@@ -127,6 +127,10 @@
   }
 
   /* --------- Skills -----------  */
+  .row h2 {
+    font-size: 2rem;
+  }
+
   #skills ul{
     max-width: 100rem;
     margin: auto;
@@ -141,6 +145,39 @@
     align-items: flex-start;
   }
 
+  /* --------- portfólio ----------  */
+  .work {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .work:nth-child(even) .header-work {
+    order: 2;
+    border-radius: 0 1.6rem 1.6rem 0;
+  }
+
+  .work:nth-child(even) .content-work {
+    border-radius: 1.6rem 0 0 1.6rem;
+  }
+
+  .header-work {
+    flex-basis: 45%; 
+    max-width: 100%;
+
+    border-radius: 1.4rem 0 0 1.6rem;
+  }
+
+  .content-work {
+    flex: 1; 
+    border-radius: 0 1.6rem 1.6rem 0rem;
+  }
+
+  .work {
+    display: flex;
+    align-items: stretch; 
+    min-height: 200px; 
+  }
+  
 }
 
 

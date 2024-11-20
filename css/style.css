@@ -24,6 +24,8 @@
   --svg-whiteMode-hover: #fbbf24;
   --nav-shadow: rgba(122, 122, 122, 0.100);
   --available-circle: #84cc16;
+
+  --header-work: #505050;
 }
 
 /* ----- Definições de estilo para o modo claro (white-mode) ---- */
@@ -36,6 +38,7 @@
   --fourth-color: #292929;
 
   --outlineWithe: #1D1D1D;
+  --header-work: #d4d4d4;
 }
 
 html, body {
@@ -504,7 +507,7 @@ section {
   background-color: var(--third-color);
   border-radius: 1.2rem;
   padding: 3.2rem;
-  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.10);
 }
 
 #experiencia p {
@@ -517,13 +520,19 @@ section {
 }
 
 /* -------- Skills ------------  */
+.row h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 2.8rem;
+
+  margin-top: 1.6rem;
+}
+
 #skills {
   background-color: var(--third-color);
   display: grid;
-}
-
-.skill ul {
-  list-style: none;
 }
 
 .skill ul{
@@ -535,8 +544,6 @@ section {
   
   text-align: center;
   list-style-type: none;
-
-  padding: 1rem;
 }
 
 #skills li{
@@ -564,3 +571,86 @@ section {
   text-align: center;
 }
 
+/* ------ Portfolio ---------  */
+.work-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 2.4rem;
+
+}
+
+.work {
+  width: 100%;         
+  max-width: 115rem;  
+  min-height: 350px; 
+
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.10));
+}
+
+.header-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-work);
+  padding: 2.4rem;
+
+  border-radius: 1.4rem 1.4rem 0 0;
+}
+
+.header-work img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.10);
+}
+
+.content-work {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: var(--third-color);
+  padding: 2.4rem;
+
+  border-radius: 0 0 1.4rem 1.4rem;
+}
+
+.content-work h2 {
+  font-size: 1.8rem;
+}
+
+.content-work p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.content-work ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+}
+
+.content-work li {
+  background-color: var(--header-work);
+  border-radius: 1.4rem;
+
+  padding: 4px 20px;
+}
+
+.content-work a {
+  width: 40px;
+  text-decoration: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.content-work svg {
+  fill: var(--font-color);
+  opacity: 0.6;
+}
+
+.content-work svg:hover {
+  fill: var(--gradient-color01);
+  transform: scale(1.2);
+  transition: 300ms;
+}
