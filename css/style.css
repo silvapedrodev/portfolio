@@ -39,7 +39,10 @@
 }
 
 html, body {
-  position: relative;
+  overflow-x: hidden;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -48,6 +51,8 @@ body {
   background-color: var(--primary-color);
   color: var(--font-color);
   font-family: var(--font-default);
+
+  position: relative;
 
   transition: background 200ms linear;
 }
