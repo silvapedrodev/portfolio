@@ -20,6 +20,8 @@ export function navBar() {
     
     if(nav.classList.contains("active")) {
       document.body.classList.add("no-scroll")
+    } else {
+      document.body.classList.remove("no-scroll")
     }
   })
 
@@ -35,4 +37,16 @@ export function navBar() {
       }
     })
   })
+
+  // --- Garante o estado correto ao redimensionar a janela --- 
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > mobileBreakpoint) {
+      // Garante que o menu esteja fechado e o scroll ativo no modo desktop
+      nav.classList.remove("active");
+      btnOpen.classList.remove("active");
+      btnClose.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    }
+  });
 }
