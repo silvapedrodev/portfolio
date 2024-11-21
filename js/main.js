@@ -9,3 +9,8 @@ const sendMessageForm = sendingMessage
 mobileNavBar()
 whiteMode()
 sendMessageForm()
+
+// ---- Coloca o ano atual no footer ----- 
+
+const currentYear = new Date().getFullYear();
+document.querySelector("#currentYear").textContent = currentYear;

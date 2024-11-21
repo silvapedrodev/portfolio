@@ -680,7 +680,6 @@ section {
   margin: auto;
 }
 
-
 /* -------- Formulário ----------  */
 form {
   font-weight: 300;
@@ -692,7 +691,6 @@ form {
 }
 
 form h1 {
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   text-align: center;
 }
 
@@ -766,3 +764,35 @@ textarea {
   text-align: center;
 }
 
+/* ------ footer -----  */
+footer {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 1.6rem;
+}
+
+footer a {
+  background-color: var(--third-color);
+  padding: 1rem;
+  border-radius: 1.2rem;
+
+  transition: all 0.3s;
+}
+
+footer a:hover , footer a:hover svg{
+  transform: scale(1.1);
+  fill: var(--gradient-color01);
+}
+
+footer svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--second-color);
+  text-decoration: none;
+}
