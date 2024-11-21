@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,9 @@
 
 :root {
   font-size: 62.5%; /*10px*/
-  --font-default: "Outfit", sans-serif;
+  --font-default: "Plus Jakarta Sans", sans-serif;
+  --font-second: "Outfit", sans-serif;
+  
   --font-color: #f8fafc;
   --contactColor: #fafafa;
   
@@ -123,6 +127,7 @@ nav {
 }
 
 nav li a {
+  font-family: var(--font-second);
   color: var(--font-color);
   text-decoration: none;
   transition: 0.3s;
@@ -332,6 +337,7 @@ section {
 }
 
 .description h1 {
+  font-family: var(--font-second);
   font-weight: 800;
   font-size: 3.6rem;
   line-height: 4rem; 
@@ -424,6 +430,7 @@ section {
   align-items: center;
 
   background: linear-gradient(90deg, var(--gradient-color01) 0%, var(--gradient-color02) 100%);
+  font-family: var(--font-second);
   font-weight: 500;
   font-size: 1.6rem;
   font-style: normal;
@@ -458,6 +465,7 @@ section {
 }
 
 #experience h2{
+  font-family: var(--font-second);
   font-size: 3.6rem;
   color: var(--gradient-color01);
   margin-bottom: 0.8rem;
@@ -659,14 +667,17 @@ section {
 
 /* ------ Contact page --------  */
 #contact {
+  font-family: var(--font-second);
   background-color: var(--third-color);
 }
 
 .contact-form {
+  max-width: 80rem;
   background: linear-gradient(90deg, var(--gradient-color01) 0%, var(--gradient-color02) 100%);
 
   padding: 1.6rem;
   border-radius: 1.4rem;
+  margin: auto;
 }
 
 
@@ -681,6 +692,7 @@ form {
 }
 
 form h1 {
+  /* font-family: "Plus Jakarta Sans", sans-serif; */
   text-align: center;
 }
 
@@ -717,19 +729,21 @@ textarea {
 /* --- botão submit ---  */
 .btnSubmit {
   background-color: var(--txt-color-form);
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #ff7576;
+  line-height: 2.4rem;
+  color: var(--txt-color-form);
+  
+  padding: 1.2rem;
+  border-radius: 999rem;
   border: none;
-  outline: none;
+  box-shadow: 0px 1px 2px rgb(239, 242, 2441 0.5),
+  0px 4px 16px rgb(239, 242, 244, 0.5);
   cursor: pointer;
-  padding: 12px 24px;
-  position: relative;
-  line-height: 24px;
-  border-radius: 9px;
-  box-shadow: 0px 1px 2px #2B3044,
-    0px 4px 16px #2B3044;
   transition: transform 0.1s;
+
+  position: relative;
 }
 
 .txtButtonSubmit {
