@@ -756,3 +756,13 @@ textarea {
   transition: 0.3s;
   transform: scale(0.93);
 }
+
+/* ---- efeito de envio form ---  */
+#sendingText {
+  display: none;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--txt-color-form); /* Cor do texto */
+  text-align: center;
+}
+

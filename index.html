@@ -482,19 +482,20 @@
           <h1>Entre em contato comigo</h1>
 
           <div>
-            <input type="text" id="name" name="name" placeholder="Nome" maxlength="50" required>
+            <input type="text" id="name" name="name" placeholder="Nome" maxlength="50" title="Digite seu nome">
           </div>
 
           <div>
-            <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email" title="Digite seu endereço de e-mail" >
           </div>
 
           <div>
-            <textarea id="message" name="message" placeholder="Sua mensagem..." maxlength="300" required></textarea>
+            <textarea id="message" name="message" placeholder="Sua mensagem..." maxlength="300" title="Digite sua mensagem" ></textarea>
           </div>
           <button type="submit" class="btnSubmit">
             <span class="txtButtonSubmit">Enviar</span>
           </button>
+            <p id="sendingText">Enviado &#x2705;</p>
         </form>
       </div>
     </section>
