@@ -753,6 +753,7 @@ textarea {
 .txtButtonSubmit {
   background: linear-gradient(90deg, var(--gradient-color01) 0%, var(--gradient-color02) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
