@@ -48,7 +48,7 @@
                 </svg>
               </button>
             </div>
-            <li id="contUs"><a href="#">Contact us</a></li>
+            <li id="contUs"><a href="#contact">Contact us</a></li>
           </ul>
         </div>
       </div>
@@ -482,13 +482,15 @@
           </div>
 
           <div>
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email" required>
           </div>
 
           <div>
             <textarea id="message" name="message" placeholder="Sua mensagem..." maxlength="300" required></textarea>
           </div>
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btnSubmit">
+            <span class="txtButtonSubmit">Enviar</span>
+          </button>
         </form>
       </div>
     </section>
